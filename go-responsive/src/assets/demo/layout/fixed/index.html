@@ -1,0 +1,50 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>layout</title>
+  <style>
+  .clearfix:before,
+  .clearfix:after {
+    content: "";
+    display: table;
+  }
+  .clearfix:after {
+    clear: both;
+  }
+  body {
+    color: #fff;
+    font-family: sans-serif;
+  }
+  .container {
+    margin: 50px auto;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #fff;
+    width: 900px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+  .content, .navbar {
+    margin: 30px 20px;
+    text-align: center;
+    line-height: 130px;
+    height: 130px;
+  }
+  .content {
+    float: left;
+    width: 600px;
+    background-color: #93675C;
+  }
+  .navbar {
+    float: right;
+    width: 210px;
+    background-color: #1EAAF1;
+  }
+  </style>
+</head>
+<body>
+  <div class="container clearfix">
+    <div class="navbar">导航</div>
+    <div class="content">内容</div>
+  </div>
+</body>
+</html>
